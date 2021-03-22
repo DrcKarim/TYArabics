@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/a1_grad"
+        android:layout_height="55dp"
+        >
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diet_tips"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/rtrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rtrt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/a2_grad"
+            android:layout_marginStart="25dp"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/previoustip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                android:src="@mipmap/left_side1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginEnd="25dp"
+            android:layout_width="40dp"
+            android:background="@drawable/a2_grad"
+            android:layout_alignParentRight="true"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/nexttip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical|center_horizontal|center"
+                android:src="@mipmap/right_side"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "734220981213",
+    "firebase_url": "https://new-apps-9-2020.firebaseio.com",
+    "project_id": "new-apps-9-2020",
+    "storage_bucket": "new-apps-9-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734220981213:android:5cc439ab88221b24ff9c34",
+        "android_client_info": {
+          "package_name": "com.BestofallHealthFitness.YogaDailyWorkoutRoutine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734220981213-gmipfh9ao493jd1719b0i4ng5djvv5d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC4c9tEEtmBpuZBeEzmigHCZuORo14i0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734220981213-gmipfh9ao493jd1719b0i4ng5djvv5d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734220981213:android:e72c7ccd69c50daaff9c34",
+        "android_client_info": {
+          "package_name": "com.BestofallHealthYoga.TamarinYoga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734220981213-gmipfh9ao493jd1719b0i4ng5djvv5d1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC4c9tEEtmBpuZBeEzmigHCZuORo14i0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734220981213-gmipfh9ao493jd1719b0i4ng5djvv5d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

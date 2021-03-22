@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/training"
+        android:checked="true"
+        android:icon="@drawable/training"
+        android:title="@string/tab1" />
+
+    <item
+        android:id="@+id/bmi"
+        android:checked="false"
+        android:icon="@drawable/bmi"
+        android:title="@string/tab2" />
+
+    <item
+        android:id="@+id/tips_main"
+        android:checked="false"
+        android:icon="@drawable/diet_tips"
+        android:title="@string/tab3" />
+    <item
+        android:id="@+id/reports"
+        android:checked="false"
+        android:icon="@drawable/routines"
+        android:title="@string/tab4" />
+
+    <item
+        android:id="@+id/profile"
+        android:checked="false"
+        android:icon="@drawable/profile"
+        android:title="@string/tab5" />
+
+
+
+</menu>

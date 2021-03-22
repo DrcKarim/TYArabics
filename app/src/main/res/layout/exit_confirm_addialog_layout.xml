@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/a2_grad"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/exit_logo"
+                android:layout_width="60dp"
+                android:layout_marginEnd="15dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/logo"/>
+        <TextView
+            android:id="@+id/text_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/exit_logo"
+            android:fontFamily="@font/bold"
+            android:text="@string/confirm"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_confirm"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toLeftOf="@+id/exit_logo"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/medium"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/MainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#10000000"
+            android:orientation="horizontal"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:id="@+id/btnNo"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/medium"
+                    android:text="@string/no"
+                    android:textColor="@color/white"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnYes"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/ok"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

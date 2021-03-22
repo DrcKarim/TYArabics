@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/ad_txt" android:background="@color/colorPrimaryDark" android:padding="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ad"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="@dimen/native_large_height" android:layout_marginTop="5dp" android:layout_below="@+id/ad_txt">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/appinstall_image" android:layout_width="150dp" android:layout_height="130dp" android:layout_marginTop="5dp" android:layout_centerHorizontal="true"/>
+                <com.google.android.gms.ads.formats.MediaView android:id="@+id/appinstall_media" android:visibility="visible" android:layout_width="150dp" android:layout_height="130dp" android:layout_marginTop="5dp" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/appinstall_call_to_action" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@+id/appinstall_app_icon" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="3dp" android:adjustViewBounds="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding5dp" android:layout_marginRight="@dimen/padding5dp">
+                        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/native_large_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/appinstall_headline" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding2dp" android:layout_marginRight="@dimen/padding2dp" android:text="" android:maxLines="1" android:maxLength="26"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/native_large_text_color" android:ellipsize="end" android:id="@+id/appinstall_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding2dp" android:layout_marginRight="@dimen/padding2dp" android:text="" android:maxLines="1" android:maxLength="90"/>
+                        <RatingBar android:gravity="center" android:layout_gravity="center" android:id="@+id/appinstall_stars" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="?android:attr/ratingBarStyleSmall"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/native_large_text_color" android:id="@+id/appinstall_price" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/native_large_sub_text_color" android:gravity="right" android:layout_gravity="right" android:id="@+id/appinstall_store" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="13sp" android:textColor="@color/native_large_button_text_color" android:id="@+id/appinstall_call_to_action" android:background="@drawable/native_large_button_color" android:layout_width="220dp" android:layout_height="35dp" android:layout_marginBottom="10dp" android:text="" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

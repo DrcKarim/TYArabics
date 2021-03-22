@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.BestofallHealthYoga.TamarinYoga">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.BestofallHealthYoga.TamarinYoga.utils.BaseApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/add_unit_id" />
+
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Splash_activity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.BestofallHealthYoga.TamarinYoga.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.BestofallHealthYoga.TamarinYoga.receiver.DailyAlarmReceiver"
+            android:exported="true" />
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.MainActivity"
+            android:theme="@style/NoActionBar" />
+
+
+
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.babyphotos.BabyPhotosActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.babyphotos.BabyPhotoEditor"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.babyphotos.FullImageViewActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Day_wise_ExerciseCountDown"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Daywise_Information"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Finish_Exercise"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.AllDayDetails"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.MyTraining"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.AddTraining"
+            android:theme="@style/NoActionBar" />
+
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.AllActivityForTraining"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Activity_totalSet"
+            android:theme="@style/NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.BestofallHealthYoga.TamarinYoga.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/main_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.RestActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.InformationOfExercise"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.SingleExerciseInfo"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.Reminder"
+            android:theme="@style/NoActionBar2" />
+
+        <activity
+            android:name="com.BestofallHealthYoga.TamarinYoga.activities.SummaryActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/EasyPermissions.Transparent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base" />
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:value="@xml/splits0" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+    </application>
+
+</manifest>

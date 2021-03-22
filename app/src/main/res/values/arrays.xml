@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="advbellyfattips">
+        <item>@string/advbellyfattip1</item>
+        <item>@string/advbellyfattip2</item>
+        <item>@string/advbellyfattip3</item>
+        <item>@string/advbellyfattip4</item>
+        <item>@string/advbellyfattip5</item>
+        <item>@string/advbellyfattip6</item>
+        <item>@string/advbellyfattip7</item>
+        <item>@string/advbellyfattip8</item>
+        <item>@string/advbellyfattip9</item>
+        <item>@string/advbellyfattip10</item>
+        <item>@string/advbellyfattip11</item>
+        <item>@string/advbellyfattip12</item>
+        <item>@string/advbellyfattip13</item>
+        <item>@string/advbellyfattip14</item>
+        <item>@string/advbellyfattip15</item>
+        <item>@string/advbellyfattip16</item>
+        <item>@string/advbellyfattip17</item>
+        <item>@string/advbellyfattip18</item>
+        <item>@string/advbellyfattip19</item>
+        <item>@string/advbellyfattip20</item>
+        <item>@string/advbellyfattip21</item>
+        <item>@string/advbellyfattip22</item>
+        <item>@string/advbellyfattip23</item>
+        <item>@string/advbellyfattip24</item>
+        <item>@string/advbellyfattip25</item>
+        <item>@string/advbellyfattip26</item>
+        <item>@string/advbellyfattip27</item>
+        <item>@string/advbellyfattip28</item>
+        <item>@string/advbellyfattip29</item>
+        <item>@string/advbellyfattip30</item>
+    </array>
+    <array name="advbellyfattipstitle">
+        <item>@string/advbellyfattip1title</item>
+        <item>@string/advbellyfattip2title</item>
+        <item>@string/advbellyfattip3title</item>
+        <item>@string/advbellyfattip4title</item>
+        <item>@string/advbellyfattip5title</item>
+        <item>@string/advbellyfattip6title</item>
+        <item>@string/advbellyfattip7title</item>
+        <item>@string/advbellyfattip8title</item>
+        <item>@string/advbellyfattip9title</item>
+        <item>@string/advbellyfattip10title</item>
+        <item>@string/advbellyfattip11title</item>
+        <item>@string/advbellyfattip12title</item>
+        <item>@string/advbellyfattip13title</item>
+        <item>@string/advbellyfattip14title</item>
+        <item>@string/advbellyfattip15title</item>
+        <item>@string/advbellyfattip16title</item>
+        <item>@string/advbellyfattip17title</item>
+        <item>@string/advbellyfattip18title</item>
+        <item>@string/advbellyfattip19title</item>
+        <item>@string/advbellyfattip20title</item>
+        <item>@string/advbellyfattip21title</item>
+        <item>@string/advbellyfattip22title</item>
+        <item>@string/advbellyfattip23title</item>
+        <item>@string/advbellyfattip24title</item>
+        <item>@string/advbellyfattip25title</item>
+        <item>@string/advbellyfattip26title</item>
+        <item>@string/advbellyfattip27title</item>
+        <item>@string/advbellyfattip28title</item>
+        <item>@string/advbellyfattip29title</item>
+        <item>@string/advbellyfattip30title</item>
+    </array>
+
+</resources>
